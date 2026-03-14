@@ -3,12 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+    <title>RV32I RISC-V Emulator</title>
+    <!-- Tailwind via CDN voor snelle styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/index.css">
   </head>
-  <body>
-    <div id="root"></div>
-    <H1>Test</H1>
-    <script src="/src/main.js"></script>
+  <body class="bg-slate-900 text-white">
+    <div id="root">
+      <!-- Als dit zichtbaar blijft, laadt je JS niet -->
+      <div class="flex items-center justify-center h-screen">
+        <p class="text-xl animate-pulse">Emulator aan het laden...</p>
+      </div>
+    </div>
+
+    <!-- Verwijder de / aan het begin van src! -->
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>
-
